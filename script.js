@@ -2,18 +2,21 @@ function mincost(arr)
 { 
 	arr.sort()
 	let cost=0;
-  arr.map((item,i)=>{
+  let newarr=arr.map((item,i)=>{
 	  cost+=item;
 	  return cost;
 })
+
+
 	let sum=0;
-	arr.shift();
-	arr.forEach((item)=>{
+	newarr.shift();
+	newarr.forEach((item)=>{
         sum+=item;
 	})
 
-	return sum;
+	console.log(sum);
   
 }
+
 
 module.exports=mincost;
