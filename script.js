@@ -7,7 +7,7 @@ function mincost(arr)
 	  return cost;
 })
 	let sum=0;
-	arr.unshift();
+	arr.shift();
 	arr.forEach((item)=>{
         sum+=item;
 	})
