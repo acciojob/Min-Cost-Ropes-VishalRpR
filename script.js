@@ -14,7 +14,7 @@ function mincost(arr)
         sum+=item;
 	})
 
-	console.log(sum);
+	return sum;
   
 }
 
